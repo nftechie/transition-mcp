@@ -12,19 +12,19 @@ Try it right now — no API key needed:
 curl "https://api.transition.fun/api/v1/wod?sport=run&duration=45"
 ```
 
-For personalized features (your training plan, performance data, AI coach), you need a free Transition account + API key. See [Getting an API Key](#getting-an-api-key) below.
+For personalized features (your training plan, performance data, AI coach), you need a Transition account + API key. See [Getting an API Key](#getting-an-api-key) below.
 
 ---
 
 ## Three Ways to Use This
 
-### 1. Claude Code Skill (Recommended)
+### 1. Claude Code / OpenClaw Skill (Recommended)
 
-The simplest option. Claude reads the skill file and calls the API directly — no binary, no MCP protocol, just HTTP.
+The simplest option. Claude reads the skill file and calls the API directly — no binary, no MCP protocol, just HTTP. Also available on [OpenClaw](https://openclaw.com).
 
 ```bash
 # Clone into your skills directory
-git clone https://github.com/transition-fitness/transition-mcp.git ~/.claude/skills/transition-mcp
+git clone https://github.com/nftechie/transition-mcp.git ~/.claude/skills/transition-mcp
 ```
 
 Set your API key:
@@ -110,7 +110,7 @@ curl -X POST -H "X-API-Key: $TRANSITION_API_KEY" \
 1. Download [Transition](https://www.transition.fun) (iOS/Android)
 2. Create an account and complete onboarding
 3. Go to **Settings > API Keys**
-4. Tap **Create API Key** — you'll see a key starting with `tr_live_`
+4. Tap **Generate New Key** — you'll see a key starting with `tr_live_`
 5. Copy it immediately (it's only shown once)
 
 Free tier includes 100 read requests/day and 3 AI requests/day. Plenty for personal use.
