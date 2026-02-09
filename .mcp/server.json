@@ -1,0 +1,37 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-10-17/server.schema.json",
+  "name": "io.github.nftechie/transition-mcp",
+  "description": "AI-powered multisport coaching — workouts, training plans, and performance analytics.",
+  "version": "1.0.0",
+  "title": "Transition MCP",
+  "websiteUrl": "https://www.transition.fun",
+  "repository": {
+    "url": "https://github.com/nftechie/transition-mcp",
+    "source": "github",
+    "subfolder": "mcp"
+  },
+  "packages": [
+    {
+      "registryType": "mcpb",
+      "identifier": "https://github.com/nftechie/transition-mcp/releases",
+      "version": "1.0.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "TRANSITION_API_KEY",
+          "description": "API key from Transition app (Settings > API Keys)",
+          "isRequired": true,
+          "isSecret": true
+        },
+        {
+          "name": "TRANSITION_API_URL",
+          "description": "API base URL (defaults to https://api.transition.fun)",
+          "isRequired": false,
+          "value": "https://api.transition.fun"
+        }
+      ]
+    }
+  ]
+}
