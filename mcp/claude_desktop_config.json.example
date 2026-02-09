@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "transition-mcp": {
+      "command": "/absolute/path/to/transition-mcp",
+      "env": {
+        "TRANSITION_API_KEY": "tr_live_xxxxxxxxxxxxxxxxxxxxx"
+      }
+    }
+  }
+}
